@@ -1,4 +1,15 @@
-*{
+  
+    // lahne heya el 7aja el behya fel scass eli y5alik tamel des variables o t7ot fehom les couleurs mtahalan:
+    $color-1:#cdb4DB;
+    $color-2:#fff1e6;
+    $color-3:#52b788;
+    $color-4:#bee1e6;
+
+      $mobile: 576px;
+      $tablets:768px;
+      $laptops: 992px;
+      $desktops:1200px;
+  *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -8,3 +19,49 @@ body{
     font-family:sans-serif ;
     font-size: 35px;
 }
+.container{
+
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+// background-color: $color-1;
+
+//! tnajem te5dem haka zeda :
+// display: grid;
+// place-content: center;   
+
+}
+.text{
+
+}
+#size{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 35px ;
+    color: red;
+
+
+}
+// ! media query : max width exemple 
+//? amel inspect lel page o enzel 3al toggle device tool bar  o abda sagherr o kaber taw tefhem
+
+@media (max-width:576px) { // kona najmou nektbouuu $mobile fi 3oudh 576 px w nansa7kom t3oudou t3mlou akeka 
+
+    .container{
+   background-color: $color-1;
+    }
+} 
+
+// donc hedhi 3akssha jemla eli heya el min width 
+//! mel 576px walet ta3ti feloun l5dher donc hedha howa lfar9
+
+
+@media (min-width:$mobile) {
+
+    .container{
+   background-color: $color-3;
+    }
+} 
